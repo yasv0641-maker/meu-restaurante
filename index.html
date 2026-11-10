@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Sarab">
+      <meta name="description" content="Boom Food - Fast-Food & Restaurante HTML Template">
+      <title>Boom Food - Fast-Food & Restaurante HTML Template</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-phone-alt"></i>+1 (800) 123-4567</span>
+                  <span><i class="fas fa-envelope"></i>gmail@BoomFood.com</span>
+                  <span><i class="fas fa-map-marker-alt"></i>42 Rua do Sabor, SP</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="ttag"><i class="fas fa-fire me-1"></i>Entrega gratis hoje!</span>
+                  <div class="tsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                  <div class="bico"><i class="fas fa-utensils"></i></div>
+                  <div>
+                     <div class="bname">Boom<span>Food</span></div>
+                     <div class="bsub">Fast-Food & Restaurante</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Pagina principal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Cardápio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reservation">Reserva</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Avaliações</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Contatos</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>peça agora</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>O que você está com fome hoje?</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="Buscar hambúrgueres, pizza, frango..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="todos">
+                  <img src="img/menu/1.jpg" alt=""/>todos os itens
+               </div>
+               <div class="sovcat" data-cat="hamburgers">
+                  <img src="img/menu/1.jpg" alt=""/>Hamburgers
+               </div>
+               <div class="sovcat" data-cat="pizza">
+                  <img src="img/menu/2.jpg" alt=""/>Pizza
+               </div>
+               <div class="sovcat" data-cat="frango">
+                  <img src="img/menu/3.jpg" alt=""/>Frango
+               </div>
+               <div class="sovcat" data-cat="wraps">
+                  <img src="img/menu/4.jpg" alt=""/>Wraps
+               </div>
+               <div class="sovcat" data-cat="pasta">
+                  <img src="img/menu/5.jpg" alt=""/>Pasta
+               </div>
+               <div class="sovcat" data-cat="Sobremesas">
+                  <img src="img/menu/6.jpg" alt=""/>sobremesas
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+               <span class="ttag">hamburguer</span>
+               <span class="ttag">frango ao nasville</span>
+               <span class="ttag">Pizza</span>
+               <span class="ttag">bolo</span>
+               <span class="ttag">batatas fritas com acompanhamento</span>
+               <span class="ttag">Milk-shake</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>  
+         <div class="hbgtxt">FOOD</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>#1 Restaurante de fast-food mais bem avaliado em São Paulo</span>
+                  </div>
+                  <h1 class="htitle">Sua <span class="hl">comida</span><br/>rapida em qualquer lugar!</h1>
+                  <p class="hdesc">Sabores deliciosos, ingredientes frescos e momentos inesquecíveis. Burgers, pizzas e muito mais - sabores que tornam cada momento delicioso.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Veja nosso cardápio</a>
+                     <!-- FIX 2: Magnific popup video trigger -->
+					 <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
+						<div class="pico"><i class="fas fa-play"></i></div>
+						<span>Conheça nossa equipe</span>
+					 </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">850<em>+</em></span><small>Clientes satisfeitos</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">120<em>+</em></span><small>Itens do Cardápio</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">15<em>+</em></span><small>Chefs Expertos</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">12<em>yr</em></span><small>Experiência</small></div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/banner-img.jpg" alt="Burger"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fas fa-fire"></i></div>
+                        <div><span class="fcnum">Oferta imperdível</span><span class="fcsm">30% desconto de hoje</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi y"><i class="fas fa-star"></i></div>
+                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ avaliações</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
+                        <div><span class="fcnum">20 min</span><span class="fcsm">Entrega rápida</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fas fa-circle"></i>Frango frito crocante</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Hambugueres gourmet</div>
+            <div class="mqitem"><i class="fas fa-circle"></i> Pizzas</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Wraps e rolinhos frescos</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Batatas fritas recheadas</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Milkshakes</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Sanduíches grelhados</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Donuts</div>
+         </div>
+      </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">O que oferecemos</span>
+               <h2 class="stitle">Navegar por <span>Categoria</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">De hamburgueres suculentos a culinária exótica de todo o mundo, encontre seu favorito em nosso cardápio</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="img/category/1.jpg" alt=""/>
+                     <div class="catnm">Todos os Itens</div>
+                     <div class="catct">99 itens</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="burgers">
+                     <img class="catimg" src="img/category/2.jpg" alt=""/>
+                     <div class="catnm">Hamburgueres</div>
+                     <div class="catct">24 itens</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="pizza">
+                     <img class="catimg" src="img/category/3.jpg" alt=""/>
+                     <div class="catnm">Pizza</div>
+                     <div class="catct">18 itens</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="chicken">
+                     <img class="catimg" src="img/category/4.jpg" alt=""/>
+                     <div class="catnm">Frango Frito</div>
+                     <div class="catct">15 itens</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="280">
+                  <div class="catcard" data-filter="wraps">
+                     <img class="catimg" src="img/category/5.jpg" alt=""/>
+                     <div class="catnm">Wraps</div>
+                     <div class="catct">12 itens</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="catcard" data-filter="desserts">
+                     <img class="catimg" src="img/category/6.jpg" alt=""/>
+                     <div class="catnm">Sobremesas</div>
+                     <div class="catct">20 itens</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="aexp"><span class="anum">12+</span><small>Anos de<br/>Excelencia</small></div>
+                     <div class="amain"><img src="img/about1.jpg" alt="Restaurante"/></div>
+                     <div class="asm"><img src="img/about2.jpg" alt=""/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">Nossa História</span>
+                  <h2 class="stitle text-start">Nós Convidamos Você a Visitar<br/>Nosso <span>Restaurante de Comida</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Fundado em 2012, o BoomFood começou como um pequeno cantinho com um grande sonho - servir comida que une as pessoas. Hoje estamos orgulhosos de servir milhares de clientes felizes toda semana com a mesma paixão que iniciou tudo.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-leaf"></i></div>
+                        <div>
+                           <h6>100% Ingredientes Frescos</h6>
+                           <p>Fonte local e sustentável. Cada ingrediente é colhido manualmente diariamente para máxima frescor.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico y"><i class="fas fa-award"></i></div>
+                        <div>
+                           <h6>Receitas com Prêmios</h6>
+                           <p>Nossas receitas signature ganharam prêmios nacionais por 5 anos consecutivos.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+                        <div>
+                           <h6>Entrega Rápida</h6>
+                           <p>Peça online e receba comida quente e fresca na sua porta em menos de 25 minutos, garantido.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>Ver Menu Completo</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ============================================================
+         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">O Que Está sendo Preparado</span>
+               <h2 class="stitle">Nosso Delicioso <span>Menu</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- FIX 3 � filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="todos">Todos</button>
+               <button class="filtbtn" data-f="burgers">Hamburgers</button>
+               <button class="filtbtn" data-f="pizza">Pizza</button>
+               <button class="filtbtn" data-f="chicken">Frango</button>
+               <button class="filtbtn" data-f="wraps">Wraps</button>
+               <button class="filtbtn" data-f="desserts">Sobremesas</button>
+               <button class="filtbtn" data-f="pasta">Pasta</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               <!-- CARD 1: Burgers -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="burgers" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/1.jpg"
+                     data-title="Classic Smash Burger"
+                     data-cat="Burgers"
+                     data-price="$14.99" data-old="$18.99"
+                     data-rating="4.9" data-reviews="128"
+                     data-cal="620" data-time="12"
+                     data-desc="Double smashed patty, cheddar cheese, caramelized onions, house pickles and our legendary special sauce. Made fresh to order on a toasted brioche bun."
+                     data-tags="Spicy,Bestseller,Beef">
+                     <div class="mimg">
+                        <img src="img/menu/1.jpg" alt="Smash Burger"/>
+                        <div class="mbdg quente"><i class="fas fa-star"></i> Quente</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Hamburgers</div>
+                        <div class="mtit">Hamburger Clássico</div>
+                        <div class="mdesc">Patty dobrado, cheddar, cebola caramelizeada, picles &amp; molho especial</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$14.99 <small>$18.99</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 2: Pizza -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/2.jpg"
+                     data-title="Margherita Royale"
+                     data-cat="Pizza"
+                     data-price="$19.99" data-old="$24.99"
+                     data-rating="4.8" data-reviews="95"
+                     data-cal="480" data-time="18"
+                     data-desc="Tomates San Marzano, mussarela de búfala fresca, folhas de manjericão aromáticas e azeite de trufa italiana sobre uma base de massa fermentada aberta à mão."
+                     data-tags="Vegetarian,New,Italian">
+                     <div class="mimg">
+                        <img src="img/menu/2.jpg" alt="Pizza"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> New</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Pizza</div>
+                        <div class="mtit">Margherita Royale</div>
+                        <div class="mdesc">Tomates San Marzano, mussarela de búfala fresca, folhas de manjericão aromáticas e azeite de trufa italiana sobre uma base de massa fermentada aberta à mão.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$19.99 <small>$24.99</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 3: Chicken -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="chicken" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/3.jpg"
+                     data-title="Nashville Hot Chicken"
+                     data-cat="Chicken"
+                     data-price="$12.99" data-old="$16.99"
+                     data-rating="5.0" data-reviews="210"
+                     data-cal="710" data-time="15"
+                     data-desc="Extra-crispy fried chicken tossed in our signature fiery Nashville spice blend, served with honey drizzle and house pickles on a toasted brioche bun."
+                     data-tags="Spicy,Bestseller,Crispy">
+                     <div class="mimg">
+                        <img src="img/menu/3.jpg" alt="Chicken"/>
+                        <div class="mbdg"><i class="fas fa-star"></i> Best Seller</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Frango</div>
+                        <div class="mtit">Frango Quente de Nashville</div>
+                        <div class="mdesc">Frango frito extra-crispy em uma mistura de especiarias fiery de Nashville, servido com drizzle de mel e picles caseiros em um pão brioche tostado.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$12.99 <small>$16.99</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 4: Wraps -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="wraps" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/4.jpg"
+                     data-title="Wrap de Fatija recheada"
+                     data-cat="Wraps"
+                     data-price="$10.99" data-old=""
+                     data-rating="4.5" data-reviews="74"
+                     data-cal="520" data-time="10"
+                     data-desc="Grilled chicken strips, saut�ed bell peppers and onions, sour cream, fresh guacamole and salsa wrapped in a warm flour tortilla with melted cheddar."
+                     data-tags="Grilled,Fresh,Mexican">
+                     <div class="mimg">
+                        <img src="img/menu/4.jpg" alt="Wrap"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Wraps</div>
+                        <div class="mtit">Wrap de Fatija recheada</div>
+                        <div class="mdesc">Strips de frango grelhado, pimentões e cebolas refogados, iogurte natural, guacamole fresco e salsa envolvidos em uma tortilla quente com cheddar derretido</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$10.99</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 5: Desserts -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/5.jpg"
+                     data-title="Bolo vulcão de Nuttela"
+                     data-cat="Sobremesas"
+                     data-price="$8.99" data-old="$11.99"
+                     data-rating="4.9" data-reviews="56"
+                     data-cal="390" data-time="8"
+                     data-desc="Bolo de chocolate quente e derretido, com um recheio cremoso de Nuttela, servido com sorvete de baunilha de madagascar, calda de caramelo salgado e frutas vermelhas frescas."
+                     data-tags="Doce">
+                     <div class="mimg">
+                        <img src="img/menu/5.jpg" alt="Bolo vulcão de Nuttela"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> Nova</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Sobremesas</div>
+                        <div class="mtit">Bolo vulcão de Nuttela</div>
+                        <div class="mdesc">Bolo de chocolate quente e derretido, com um recheio cremoso de Nuttela, servido com sorvete de baunilha de madagascar, calda de caramelo salgado e frutas vermelhas frescas.</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">$8.99 <small>$11.99</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 6: Pasta -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pasta" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/6.jpg"
+                     data-title="Massa de trufa e cogumelos"
+                     data-cat="Massa"
+                     data-price="$16.99" data-old=""
+                     data-rating="4.9" data-reviews="88"
+                     data-cal="560" data-time="20"
+                     data-desc="Al dente tagliatelle tossed with mixed wild mushrooms, freshly shaved black truffle, ag."
+                     data-tags="Vegetarian,Chef's Pick,Italian">
+                     <div class="mimg">
+                        <img src="img/menu/6.jpg" alt="Massa de trufa e cogumelos"/>
+                        <div class="mbdg hot">Chef's Pick</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Massa</div>
+                        <div class="mtit">Massa de trufa e cogumelos</div>
+                        <div class="mdesc">Tagliatelle al dente envolvido em uma mistura de cogumelos selvagens, trufa negra fresca e parmesão envelhecido.</div>
+                        <div class="mfoot">
+                           <div class="mprice">$16.99</div>
+                           <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                        </div>
+                        <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="#" class="btn-red"><i class="fas fa-th-large"></i>Ver Menu Completo</a></div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         FIX 4 � MENU DETAIL POPUP MODAL
+         ============================================================ -->
+      <div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="font-size:.82rem;color:#aaa;margin-left:9px;">parte</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Adicionar ao carrinho</button>
+            </div>
+         </div>
+      </div>
+      <!-- SPECIAL OFFER -->
+      <section id="special">
+         <div class="spbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6" data-aos="fade-right">
+                  <div class="sptag"><i class="fas fa-bolt me-1"></i>Oferta por tempo limitado</div>
+                  <h2 class="sptitle">Ganhe 30% de desconto<br/>Nossa assinatura<br/><span>Hamburguer</span> Refeição</h2>
+                  <p class="spdesc">Não perca nossa oferta especial de fim de semana - aproveite nosso combo de hamburguer de assinatura premiado com batatas fritas carregadas e um milkshake premium a um preço inacreditável.</p>
+                  <div class="cdwrap">
+                     <div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">Horas</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">Minutos</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdS">30</span><span class="cdlbl">Segundos</span></div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-cart"></i>Garanta a Oferta</a>
+               </div>
+               <div class="col-lg-6" data-aos="fade-left">
+                  <div class="spimgw">
+                     <div class="spglow"></div>
+                     <div class="sppbdg"><span class="old">$24.99</span><span class="np">$17.49</span></div>
+                     <img src="img/off-img.jpg" alt="Special Burger"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         GALLERY � FIX 7 (click opens detail popup)
+         ============================================================ -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Vitrine de food
+               </span>
+               <h2 class="stitle">Vamos ver <span>Fast-Food</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/portfolio/work1.jpg"
+                  data-gtitle="Gourmet Burgers"
+                  data-gdesc="Our award-winning smash burgers, hand-crafted with 100% premium beef, aged cheddar and house-made sauces.">
+                  <img src="img/portfolio/work1.jpg" alt="Burgers"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Hambúrgueres Gourmet</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/portfolio/work2.jpg"
+                  data-gtitle="Wood-Fired Pizza"
+                  data-gdesc="Authentic Neapolitan-style pizzas fired at 900deg F in our wood-burning stone oven for the perfect char.">
+                  <img src="img/portfolio/work2.jpg" alt="Pizza"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Pizza a lenha</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/portfolio/work3.jpg"
+                  data-gtitle="Crispy Fried Chicken"
+                  data-gdesc="Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend.">
+                  <img src="img/portfolio/work3.jpg" alt="Chicken"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Frango Frito Crocante</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/portfolio/work4.jpg"
+                  data-gtitle="Sweet Desserts"
+                  data-gdesc="Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries.">
+                  <img src="img/portfolio/work4.jpg" alt="Desserts"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Sobremesas Doces</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/portfolio/work5.jpg"
+                  data-gtitle="Wraps e Rolos Frescos"
+                  data-gdesc="Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces.">
+                  <img src="img/portfolio/work5.jpg" alt="Wraps"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Wraps e Rolos Frescos</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIX 7 � GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Anterior</button>
+               <button id="gpNext">Próximo <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- ============================================================
+         HISTORY � FIX 8 (alternating left/right text)
+         ============================================================ -->
+      <section id="history">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Nossa Jornada</span>
+               <h2 class="stitle">Uma História de <span>Restaurante</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Desde nossos humildes começos até sermos o restaurante mais amado da cidade - cada capítulo foi escrito com paixão.</p>
+            </div>
+            <div class="timeline" data-aos="fade-up">
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2012</div>
+                     <h5>Evolução dos Restaurantes</h5>
+                     <p>BoomFood inaugura seu primeiro restaurante com 20 lugares, ma Flavor Street.Em menos de 3 meses, formam-se filas que dão a volta no quarteirão todas as noites,á medida de que a fama da nossa comida se espalha</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2012</div>
+                     <h5>Evolução dos Restaurantes</h5>
+                     <p>.BoomFood inaugura seu primeiro restaurante com 20 lugares, ma Flavor Street.Em menos de 3 meses, formam-se filas que dão a volta no quarteirão todas as noites,á medida de que a fama da nossa comida se espalha</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2015</div>
+                     <h5>Alta gastronomia &amp; o conceito</h5>
+                     <p>Ampliando a visão- introduzimos nosso menu de autoral e contratamos nosso primeiro chef com formação em restaurantes estrelados pelo Guia Michelin, elevando nosso trabalho a patamares notáveis.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2015</div>
+                     <h5>Alta gastronomia &amp; o conceito</h5>
+                     <p>Expandindo a visão - apresentamos nosso menu de degustação exclusivo e contratamos nosso primeiro chef treinado pelo Michelin, elevando nossa arte a novos patamares incríveis.</p>
+                  </div>
+               </div>
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2019</div>
+                     <h5>Origens do fast food moderno</h5>
+                     <p>Lançamos nossa linha de fast-food exclusiva, unindo qualidade gourmet com rapidez e praticidade. Em 6 meses, ganhamos 3 prêmios culinários nacionais de prestígio.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2019</div>
+                     <h5>Origens do fast food moderno</h5>
+                     <p>Lançamos nossa linha de fast-food exclusiva, unindo qualidade gourmet com rapidez e praticidade. Em 6 meses, ganhamos 3 prêmios culinários nacionais de prestígio.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">2026</div>
+                     <h5>Expansão Nacional</h5>
+                     <p>Agora operando em 8 cidades nos Brasil com uma plataforma de entrega online que lida com mais de 10.000 pedidos por semana - e crescendo a cada day.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">2026</div>
+                     <h5>Expansão Nacional</h5>
+                     <p>Agora operando em 8 cidades nos Brasil com uma plataforma de entrega online que lida com mais de 10.000 pedidos por semana - e crescendo a cada day.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- CHEFS -->
+      <section id="chefs">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">A equipe culinária</span>
+               <h2 class="stitle">Veja nosso cardápio <span>Chefs</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/1.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Alice Moraes</div>
+                        <div class="chrole">Chef executivo</div>
+                        <div class="chexp">12 anos de experiência</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/2.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Michael Santos</div>
+                        <div class="chrole">Mestre de Churrasco</div>
+                        <div class="chexp">8 anos de experiência</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/3.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Bruno Oliveira</div>
+                        <div class="chrole">Chef confeiteiro</div>
+                        <div class="chexp">10 anos de experiência</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/4.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">William Lima</div>
+                        <div class="chrole">artista da pizza</div>
+                        <div class="chexp">9 anos de experiência</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- HOURS -->
+      <section id="hours">
+         <div class="hrsbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl" style="color:#a5d6bc;">Horário de Funcionamento</span>
+               <h2 class="stitle" style="color:#fff;">Estamos Abertos <span style="color:var(--secondary);">Para Você</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="hrscard">
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Segunda - Terça</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot off"></div>
+                           <span class="hrstime" style="color:#ff6b6b;">Fechado</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Quarta - Quinta</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 Manhã- 10:00 Noite</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i> Sexta</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">09:00 Manhã - 11:00 Noite</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Sábado</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10:00 Manhã - 11:30 Noite</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Domingo</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">11:00 Manhã - 09:00 Noite</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3" data-aos="zoom-in">
+                  <div class="hrscta">
+                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+                     <h4>Faça seu pedido online</h4>
+                     <p>Receba comida quente em 25 minutos</p>
+                     <a href="#menu" class="btnw">Pedir Agora ?</a>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-aos="fade-left">
+                  <div class="hrscard">
+                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>Endereço</span><span class="hrstime" style="font-size:.8rem;">42 Flavor Street, NY</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>Telefone</span><span class="hrstime" style="font-size:.8rem;">+1 (800) 123-4567</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">hello@sarabfood.com</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">O que as pessoas dizem</span>
+               <h2 class="stitle">Nosso Clientes <span>Feedback</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="swiper tesSwiper" data-aos="fade-up">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Honestamente, os melhores hambúrgueres que eu já comi. O smash burger é incrível - bordas perfeitamente crocantes, suculento por dentro, e aqueles picles! Agora nós vamos todo sexta-feira..</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/1.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Monica Ribeiro</div>
+                              <div class="tesrl">Cliente Regular</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Pedimos entrega e a comida chegou quente e fresca em 22 minutos. As porções são generosas. Sarab se tornou meu ponto de referência para comida confortável sem dúvida.</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/2.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Carlos Silva</div>
+                              <div class="tesrl">Blogueiro de Comida</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">A massa de trufas me surpreendeu. Eu não esperava essa qualidade de um lugar de fast food. Ótimo ambiente, funcionários super simpáticos. Super recomendado!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/3.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Priscila Santos</div>
+                              <div class="tesrl">Entusiasta de Comida</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Fornecemos o catering da nossa festa de escritório para 50 pessoas e tudo foi impecável. Fresco, delicioso, pontual e bem apresentado. O frango à Nashville foi a grande estrela!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/4.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Davi Lucca</div>
+                              <div class="tesrl">Cliente Corporativo</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination mt-4" style="position:static;"></div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- RESERVATION FORM -->
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Reserve uma mesa</span>
+               <h2 class="stitle">Fazer uma <span>Reserva</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Reserve sua mesa para uma experiência gastronômica memorável. Recomendamos fazer a reserva com 24 horas de antecedência para as noites de fim de semana..</p>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Informações de Contato</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">Estamos felizes em ajudá-lo a planejar a experiência gastronômica perfeita.</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Horário de Funcionamento</strong><span style="color:#fff;font-size:.87rem;">Seg - Dom, 9 Manhã - 11 Tarde</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Telefone</strong><span style="color:#fff;font-size:.87rem;">+11 (800) 123-4567</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Reunião de Grupo</strong><span style="color:#fff;font-size:.87rem;">Menus especiais para 10+ convidados</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Localização</strong><span style="color:#fff;font-size:.87rem;">42 Itapevi, SP</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Nome *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
+                        <div class="col-sm-6"><label class="flbl">Número do Telefone *</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
+                        <div class="col-sm-6"><label class="flbl">Endereço de Email *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Número de Convidados *</label>
+                           <select class="fctrl">
+                              <option>1 Pessoa</option>
+                              <option>2 Pessoas</option>
+                              <option>3 - 4 Pessoas</option>
+                              <option>5 - 6 Pessoas</option>
+                              <option>7 -10 Pessoas</option>
+                              <option>10+ Pessoas</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-6"><label class="flbl">Data*</label><input type="date" class="fctrl"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Tempo *</label>
+                           <select class="fctrl">
+                              <option>09:00 manhã</option>
+                              <option>10:00 manhã</option>
+                              <option>11:00 manhã</option>
+                              <option>12:00 tarde</option>
+                              <option>01:00 tarde</option>
+                              <option>02:00 tarde</option>
+                              <option>06:00 noite</option>
+                              <option>07:00 noite</option>
+                              <option>08:00 noite</option>
+                              <option>09:00 noite</option>
+                              <option>10:00 noite</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Pedido Especial</label><textarea class="fctrl" rows="3" placeholder="Allergies, dietary needs, special occasions..."></textarea></div>
+                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Confirma Reserva</button></div>
+                     </div>
+                     <div class="sucmsg" id="resOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Mesa reservada! Vamos confirmar por e-mail em breve.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- BLOG -->
+      <section id="blog">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Notícias &amp; Atualizações</span>
+               <h2 class="stitle">Nossas Últimas <span>Postagens</span> no Blog</h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/1.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">14</span><span class="bm">Mar</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Food &amp; Health</div>
+                        <div class="bltit"><a href="#">Fast Food Saudável: Um Mito ou Uma Bela Realidade</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>James Rodrigues</span><span><i class="fas fa-comment"></i>24 Comentários</span></div>
+                        <a href="#" class="blmore">Leia mais <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/2.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">28</span><span class="bm">Fev</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Ciência do Alimento</div>
+                        <div class="bltit"><a href="#">Fast Food Está Ficando Mais Saudável? Aqui Está O Que Nós Encontramos</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>Boom Food</span><span><i class="fas fa-comment"></i>18 Comentários</span></div>
+                        <a href="#" class="blmore">Leia mais <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/blog/3.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">05</span><span class="bm">Jan</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Receitas</div>
+                        <div class="bltit"><a href="#">Receita Inovadora de Grãos de Bico Quentes para a Casa</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>Chef Marcos</span><span><i class="fas fa-comment"></i>32 Comentários</span></div>
+                        <a href="#" class="blmore">Leia mais <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- NEWSLETTER -->
+      <section id="newsletter">
+         <div class="nlbg"></div>
+         <div class="container">
+            <div class="nlw text-center" data-aos="zoom-in">
+               <span class="slbl" style="color:rgba(255,255,255,.7);">Mantenha-se Conectado</span>
+               <h2 class="mb-3" style="color:#fff;">Inscreva-se &amp; Receba Ofertas Exclusivas</h2>
+               <p class="mb-4" style="color:rgba(255,255,255,.78);">Obtenha 15% de desconto na sua primeira compra mais acesso antecipado a novos itens do cardápio</p>
+               <div class="nl-form-wrap">
+                  <input class="nlinput" type="email" id="nlEmail" placeholder="Digite seu endereço de email..."/>
+                  <button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Inscrever-se</button>
+               </div>
+               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>Sem spam, cancele a qualquer momento.</p>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- ============================================================
+         FIX 6 � CONTACT FORM
+         ============================================================ -->
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Entre em Contato</span>
+               <h2 class="stitle">Contate <span>Nós</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Tem uma pergunta, feedback ou quer planejar um evento especial? Adoraríamos ouvir de você.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div class="ctdark">
+                     <h4>Vamos Conversar</h4>
+                     <p class="ctsub">Geralmente respondemos dentro de 2 horas durante o horário comercial.</p>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ctinfo"><strong>Endereço</strong><span>42 Itapevi, <br/>itapevi, São Paulo 10001</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ctinfo"><strong>Telefone</strong><span>+11 123-4567</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-envelope"></i></div>
+                        <div class="ctinfo"><strong>Email</strong><span>gmail@boomfood.com</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-clock"></i></div>
+                        <div class="ctinfo"><strong>Horário de Funcionamento</strong><span>Qua - Dom: 9h - 23h</span></div>
+                     </div>
+                     <div class="ctsocrow">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Seu nome *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
+                        <div class="col-sm-6"><label class="flbl">Endereço de email*</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6"><label class="flbl">Telefone</label><input type="tel" class="fctrl" placeholder="+11 123-4567"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Assunto *</label>
+                           <select class="fctrl">
+                              <option>Consulta geral</option>
+                              <option>Serviços de buffet &amp; Events</option>
+                              <option>Feedback</option>
+                              <option>Parceria</option>
+                              <option>Mídia  &amp; imprensa</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Mensagem *</label><textarea class="fctrl" rows="5" placeholder="Write your message here..."></textarea></div>
+                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>enviar mensagem</button></div>
+                     </div>
+                     <div class="sucmsg" id="ctcOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Mensagem enviada! Responderemos em até 2 horas.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Boom<span>Food</span></div>
+                  <p class="fdesc">Reunimos os melhores sabores do mundo em uma experiência rápida, amigável e acessível. Cada refeição feita com amor.</p>
+                  <div class="fsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Links Rápidos</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-right"></i>Sobre Nós</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Nosso Cardápio</a></li>
+                     <li><a href="#reservation"><i class="fas fa-chevron-right"></i>Reserva</a></li>
+                     <li><a href="#blog"><i class="fas fa-chevron-right"></i>Blog</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Contato</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Nosso Cardápio</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Hambúrguer</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pizza</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Frago frito</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Wraps &amp; Rolls</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Pasta</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Sobremesas</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">Entre em Contato</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>Endereço</strong>42 Avenida Presidente Vargas, Itapevi, São Paulo 10001</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>Telefone</strong>+11 123-4567</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>Email</strong>gmail@sarabfood.com</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-clock"></i></div>
+                     <div class="fciinfo"><strong>Horário</strong>Qua - Dom: 09 manhã- 11 noite</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <p>&copy 2026 <span>Sarab Restaurant</span>. Todos os direitos reservados a  <a target="_blank" class="mx-0 fw-bold text-success" href="https://bestwpware.com/">Bestwpware</a>. Made with <span><i class="fas fa-heart"></i></span>  <br>Distribuído por <a target="_blank" class="mx-0 fw-bold text-success" href="https://themewagon.com">ThemeWagon</a></p>
+                  <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Floating cart -->
+      <!-- <div class="cartfl"><i class="fas fa-shopping-cart"></i><span>My Cart</span><div class="ccount" id="cartCount">0</div></div> -->
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+	<!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
